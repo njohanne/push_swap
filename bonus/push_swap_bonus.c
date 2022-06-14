@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: njohanne <njohanne@student.42.fr>          +#+  +:+       +#+        */
+/*   By: njohanne <njohanne@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 13:20:53 by njohanne          #+#    #+#             */
-/*   Updated: 2022/05/26 17:49:44 by njohanne         ###   ########.fr       */
+/*   Updated: 2022/06/14 14:23:46 by njohanne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,8 @@ int	main(int arg, char **arv)
 	t_stack	b;
 	char	**str;
 
+	if (arg == 1)
+		ft_error();
 	str = ft_parser_str(arg, arv, &a);
 	if (!check_arv(&a, &b, str))
 		return (0);
